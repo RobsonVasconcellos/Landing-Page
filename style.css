@@ -112,6 +112,10 @@ ul, #myUL {
     -ms-user-select: none; /* IE 10+ */
     user-select: none;
   }
+
+  .caret:hover {
+      color: orange;
+  }
   
   .caret::before {
     content: "\25B6";
