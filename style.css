@@ -1,21 +1,61 @@
-body {
-    margin: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
 }
-body .bbbootstrap {
-    background-image: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1566917764/Add_a_heading.png) !important;
-    background-size: cover;
-    padding: 180px 0 30px 0;
-    }
-    .bbbootstrap {
-    padding: 40px;
-    margin-bottom: 22px;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    background-color: #2e9df7;
-    -webkit-box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) inset, 0 -15px 15px -15px rgba(0, 0, 0, 0.25) inset;
-    box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) inset, 0 -15px 15px -15px rgba(0, 0, 0, 0.25) inset
-    }
-    .bbbootstrap form {
+
+body, html {
+	margin: 0;
+}
+
+.header-container {
+	width: 100%;
+	height: 350px;
+	background-image: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1566917764/Add_a_heading.png) !important;
+	background-color: #424242;
+	background-size: cover;
+	background-position: 100px;
+	position: relative;
+}
+
+
+.navbar__menu {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	padding: 8px 24px;
+}
+
+.navbar__item {
+	margin-left: 12px;
+	color: white;
+}
+
+.navbar__item a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	padding: 12px 16px;
+	background-color: #424242;
+	border-radius: 8px;
+}
+
+.searchInput {
+	height: 50px;
+	border-radius: 8px;
+	border: none;
+	padding: 0 24px;
+	background-color: #424242;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+form {
     position: relative;
     width: 540px;
     margin: 22px auto 0
@@ -31,7 +71,7 @@ body .bbbootstrap {
     font-family: inherit;
     vertical-align: baseline
     }
-    .bbbootstrap form input[type="text"] {
+    form input[type="text"] {
     padding: 15px 20px;
     padding-right: 100px;
     border-color: transparent;
@@ -59,7 +99,7 @@ body .bbbootstrap {
     line-height: 22px;
     border-radius: 4px
     }
-    .bbbootstrap form input[type="submit"] {
+    form input[type="submit"] {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -108,3 +148,7 @@ body .bbbootstrap {
     background-image: linear-gradient(#38a2f7, #2498f7)
     }
 
+    .container {
+        padding: 32px 15%;
+    }
+    
